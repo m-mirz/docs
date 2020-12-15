@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DPsim – Core Tasks</title>
-    <link>https://dpsim.fein-aachen.org/docs/tasks/</link>
+    <link>https://m-mirz.github.io/docs-dpsim/docs/tasks/</link>
     <description>Recent content in Core Tasks on DPsim</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://dpsim.fein-aachen.org/docs/tasks/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://m-mirz.github.io/docs-dpsim/docs/tasks/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Add New Model</title>
-      <link>https://dpsim.fein-aachen.org/docs/tasks/add-model/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/tasks/add-model/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/tasks/add-model/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/tasks/add-model/</guid>
       <description>
         
         
@@ -78,10 +78,10 @@ The general structure looks as follows.&lt;/p&gt;
     
     <item>
       <title>Docs: Create New Simulation</title>
-      <link>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/tasks/create-simulation/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/tasks/create-simulation/</guid>
       <description>
         
         

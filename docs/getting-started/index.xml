@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DPsim – Getting Started</title>
-    <link>https://dpsim.fein-aachen.org/docs/getting-started/</link>
+    <link>https://m-mirz.github.io/docs-dpsim/docs/getting-started/</link>
     <description>Recent content in Getting Started on DPsim</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://dpsim.fein-aachen.org/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://m-mirz.github.io/docs-dpsim/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Build</title>
-      <link>https://dpsim.fein-aachen.org/docs/getting-started/build/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/getting-started/build/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/getting-started/build/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/getting-started/build/</guid>
       <description>
         
         
@@ -148,10 +148,10 @@ $ make docs_cxx
     
     <item>
       <title>Docs: Development</title>
-      <link>https://dpsim.fein-aachen.org/docs/getting-started/development/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/getting-started/development/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/getting-started/development/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/getting-started/development/</guid>
       <description>
         
         
@@ -189,10 +189,10 @@ $ make docs_cxx
     
     <item>
       <title>Docs: Install</title>
-      <link>https://dpsim.fein-aachen.org/docs/getting-started/install/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/getting-started/install/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/getting-started/install/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/getting-started/install/</guid>
       <description>
         
         
@@ -232,10 +232,10 @@ In case it is not activated, run:&lt;/p&gt;
     
     <item>
       <title>Docs: Real-Time</title>
-      <link>https://dpsim.fein-aachen.org/docs/getting-started/real-time/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/getting-started/real-time/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/getting-started/real-time/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/getting-started/real-time/</guid>
       <description>
         
         

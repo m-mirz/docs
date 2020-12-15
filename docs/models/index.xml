@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DPsim – Models</title>
-    <link>https://dpsim.fein-aachen.org/docs/models/</link>
+    <link>https://m-mirz.github.io/docs-dpsim/docs/models/</link>
     <description>Recent content in Models on DPsim</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://dpsim.fein-aachen.org/docs/models/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://m-mirz.github.io/docs-dpsim/docs/models/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Basic Elements</title>
-      <link>https://dpsim.fein-aachen.org/docs/models/basic-elements/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/models/basic-elements/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/models/basic-elements/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/models/basic-elements/</guid>
       <description>
         
         
@@ -29,10 +29,10 @@
     
     <item>
       <title>Docs: Branches</title>
-      <link>https://dpsim.fein-aachen.org/docs/models/branches/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/models/branches/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/models/branches/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/models/branches/</guid>
       <description>
         
         
@@ -47,10 +47,10 @@
     
     <item>
       <title>Docs: Induction Machine</title>
-      <link>https://dpsim.fein-aachen.org/docs/models/induction-machine/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/models/induction-machine/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/models/induction-machine/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/models/induction-machine/</guid>
       <description>
         
         
@@ -61,10 +61,10 @@
     
     <item>
       <title>Docs: Synchronous Generator</title>
-      <link>https://dpsim.fein-aachen.org/docs/models/synchronous-generator/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/models/synchronous-generator/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/models/synchronous-generator/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/models/synchronous-generator/</guid>
       <description>
         
         
@@ -352,10 +352,10 @@
     
     <item>
       <title>Docs: VS-Inverter</title>
-      <link>https://dpsim.fein-aachen.org/docs/models/power-electronics/</link>
+      <link>https://m-mirz.github.io/docs-dpsim/docs/models/power-electronics/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim.fein-aachen.org/docs/models/power-electronics/</guid>
+      <guid>https://m-mirz.github.io/docs-dpsim/docs/models/power-electronics/</guid>
       <description>
         
         
