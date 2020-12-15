@@ -1,0 +1,118 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DPsim – Core Tasks</title>
+    <link>https://dpsim.fein-aachen.org/docs/tasks/</link>
+    <description>Recent content in Core Tasks on DPsim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://dpsim.fein-aachen.org/docs/tasks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Add New Model</title>
+      <link>https://dpsim.fein-aachen.org/docs/tasks/add-model/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim.fein-aachen.org/docs/tasks/add-model/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;add-a-component-model&#34;&gt;Add a Component Model&lt;/h2&gt;
+&lt;p&gt;In this section we will show the implementation of a new component model by means a three-phase dynamic phasor inductor model.&lt;/p&gt;
+&lt;h3 id=&#34;c-oop&#34;&gt;C++ OOP&lt;/h3&gt;
+&lt;p&gt;DPsim implements component models in a sub project called CPowerSystems (CPS) that is located in the &lt;em&gt;models&lt;/em&gt; folder.
+This folder is added to the DPsim CMake project.
+Every component in DPsim is represented by a C++ class.&lt;/p&gt;
+&lt;p&gt;DPsim supports different types of solvers (MNA, DAE, NRP).
+Each solver requires certain member functions in the component class to be implemented.
+These functions are specified by the solver interface classes: &lt;code&gt;MNAInterface.h&lt;/code&gt;, &lt;code&gt;DAEInterface.h&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;h3 id=&#34;directory--namespace-structure&#34;&gt;Directory / Namespace Structure&lt;/h3&gt;
+&lt;p&gt;For the implementation of the new component, we add two new files&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;models/Source/DP/DP_Ph3_Inductor.cpp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;models/Include/DP/DP_Ph3_Inductor.h&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In these files, we will implement a new C++ class with the name &lt;code&gt;CPS::DP::Ph3::Inductor&lt;/code&gt;.
+The general structure looks as follows.&lt;/p&gt;
+&lt;p&gt;Directories:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;DPsim
+ |
+ |- Source
+ |- Include
+  \ models
+      |- Source
+          |- DP
+          |- EMT
+          |- Static
+            \ Signal
+      |- Include
+          |- DP
+          |- EMT
+          |- Static
+            \ Signal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Namespaces:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CPS::{DP,EMT,Static,Signal}::{Ph1,Ph3}::{Name}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;attributes&#34;&gt;Attributes&lt;/h3&gt;
+&lt;p&gt;Each components has a list of attributes, which has to be specified when creating the components class.&lt;/p&gt;
+&lt;p&gt;TODO: explain attribute system&lt;/p&gt;
+&lt;h3 id=&#34;tasks-for-prepost-step-functions&#34;&gt;Tasks for Pre/Post-step Functions&lt;/h3&gt;
+&lt;p&gt;TODO: add example task dependency graph&lt;/p&gt;
+&lt;h3 id=&#34;adding-the-new-component-to-dpsim&#34;&gt;Adding the new Component to DPsim&lt;/h3&gt;
+&lt;p&gt;After finishing the implementation of the new component, it needs to be added to the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;models/Include/cps/Components.h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;models/Source/CMakeLists.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Sources/Python/Module.cpp&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Create New Simulation</title>
+      <link>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here, we will show the implementation of a new simulation scenario defined in C++, which is using DPsim as a library.&lt;/p&gt;
+&lt;h2 id=&#34;directory-structure&#34;&gt;Directory Structure&lt;/h2&gt;
+&lt;p&gt;In the end, your directory structure should look like as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;my-project
+  |- CMakeLists.txt
+  |- source
+      |- my-scenario.cpp
+  |- dpsim (as submodule)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;cmake-file&#34;&gt;CMake File&lt;/h2&gt;
+&lt;p&gt;Your CMakeLists could look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmake_minimum_required(VERSION 3.5)
+project(my-project CXX)
+
+add_subdirectory(dpsim)
+
+add_executable(my-scenario source/my-scenario.cpp)
+  target_link_libraries(my-scenario dpsim)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build-the-project&#34;&gt;Build the Project&lt;/h2&gt;
+&lt;p&gt;The build process is similar to the one of DPsim:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd my-project
+$ mkdir build &amp;amp;&amp;amp; cd build
+$ cmake ..
+$ make my-scenario&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
